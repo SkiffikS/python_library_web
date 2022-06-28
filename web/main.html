@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Бібліотека</title>
+
+    <link rel="icon" type="image/png" href="/faveicon.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 class="title">Проект "Домашня бібліотека"</h1>
+    <div class="header">
+        <h2 class="subtitle">Пошук книги</h2>
+        <div class="search">
+            <div class="input-block">
+                <input class="input" type="text" id="input-1" required>
+                <label for="">Введіть назву книги</label>
+            </div>
+            <div class="button-block">
+                <button class="button" onclick="search_book_in_name()">Знайти книгу</button>
+            </div>
+        </div>
+    </div>
+    <div class="resulttext" id="result-0"></div>
+    <div class="body">
+        <h2 class="subtitle">
+            Додаткові функції бібліотеки
+        </h2>
+        <div class="funks">
+            <div class="funk1">
+                <h3 class="funktitle">Демонстрація книг <br> що є у наявності</h3>
+                <div class="buttonfunk">
+                    <button class="funkbutton" onclick="get_all_books()"> Показати </button>
+                </div>
+                <div class="resulttext" id="result-1">
+                </div>
+            </div>
+            <div class="funk2">
+                <h3 class="funktitle">Редагувати книгу</h3>
+                <div class="input-block">
+                    <input class="input" type="text" id="input-2" required>
+                    <label for="">Введіть назву книги</label>
+                </div>
+                <h4 class="minititle">Введіть дані які хочете редагувати:</h4>
+                <div class="input-block">
+                    <input class="input" type="text" id="input-4" required>
+                    <label for="">Жанр/жанри</label>
+                </div>
+                <div class="input-block">
+                    <input class="input" type="text" id="input-5" required>
+                    <label for="">Вид видання</label>
+                </div>
+                <div class="input-block">
+                    <input class="input" type="text" id="input-6" required>
+                    <label for="">Рік випуску</label>
+                </div>
+                <div class="input-block">
+                    <input class="input" type="text" id="input-7" required>
+                    <label for="">Автори/автори</label>
+                </div>
+                <div class="input-block">
+                    <input class="input" type="text" id="input-8" required>
+                    <label for="">Розміщення</label>
+                </div>
+                <div class="buttonfunk">
+                    <button class="funkbutton" onclick="correct_book()"> Редагувати </button>
+                </div>
+                <div class="resulttext" id="result-2">
+                </div>
+            </div>
+            <div class="funk3">
+                <h3 class="funktitle">Додати книгу</h3>
+                <h4 class="minititle">Введіть дані книги:</h4>
+                <div class="input-block">
+                    <input class="input" type="text" id="input-10" required>
+                    <label for="">Назва</label>
+                </div>
+                <div class="input-block">
+                    <input class="input" type="text" id="input-11" required>
+                    <label for="">Жанр/жанри</label>
+                </div>
+                <div class="input-block">
+                    <input class="input" type="text" id="input-12" required>
+                    <label for="">Вид видання</label>
+                </div>
+                <div class="input-block">
+                    <input class="input" type="text" id="input-13" required>
+                    <label for="">Рік випуску</label>
+                </div>
+                <div class="input-block">
+                    <input class="input" type="text" id="input-14" required>
+                    <label for="">Автори/автори</label>
+                </div>
+                <div class="input-block">
+                    <input class="input" type="text" id="input-15" required>
+                    <label for="">Розміщення</label>
+                </div>
+                <div class="buttonfunk">
+                    <button class="funkbutton" onclick="add_book()"> Додати </button>
+                </div>
+                <div class="resulttext" id="result-3">
+                </div>
+            </div>
+            <div class="funk4">
+                <h3 class="funktitle">Видалити книгу</h3>
+                <div class="input-block">
+                    <input class="input" type="text" id="input-16" required>
+                    <label for="">Введіть назву книги</label>
+                </div>
+                <div class="buttonfunk">
+                    <button class="funkbutton" onclick="delete_book()"> Видалити </button>
+                </div>
+                <div class="resulttext" id="result-4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="eel.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
